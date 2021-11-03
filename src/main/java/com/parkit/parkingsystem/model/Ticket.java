@@ -1,61 +1,69 @@
 package com.parkit.parkingsystem.model;
 
-import java.util.Calendar;
 import java.util.Date;
 
 public class Ticket {
-    private int id;
-    private ParkingSpot parkingSpot;
-    private String vehicleRegNumber;
-    private double price;
-    private Date inTime;
-    private Date outTime;
+	private int id;
+	private ParkingSpot parkingSpot;
+	private String vehicleRegNumber;
+	private double price;
+	private Date inTime;
+	private Date outTime;
+	private boolean isRecurringUser;
 
-    public int getId() {
-        return id;
-    }
+	public int getId() {
+		return id;
+	}
 
-    public void setId(int id) {
-        this.id = id;
-    }
+	public void setId(int id) {
+		this.id = id;
+	}
 
-    public ParkingSpot getParkingSpot() {
-        return parkingSpot;
-    }
+	public ParkingSpot getParkingSpot() {
+		return parkingSpot;
+	}
 
-    public void setParkingSpot(ParkingSpot parkingSpot) {
-        this.parkingSpot = parkingSpot;
-    }
+	public void setParkingSpot(ParkingSpot parkingSpot) {
+		this.parkingSpot = parkingSpot;
+	}
 
-    public String getVehicleRegNumber() {
-        return vehicleRegNumber;
-    }
+	public String getVehicleRegNumber() {
+		return vehicleRegNumber;
+	}
 
-    public void setVehicleRegNumber(String vehicleRegNumber) {
-        this.vehicleRegNumber = vehicleRegNumber;
-    }
+	public void setVehicleRegNumber(String vehicleRegNumber) {
+		this.vehicleRegNumber = vehicleRegNumber;
+	}
 
-    public double getPrice() {
-        return price;
-    }
+	public boolean isRecurringUser() {
+		return isRecurringUser;
+	}
 
-    public void setPrice(double price) {
-        this.price = price;
-    }
+	public void setRecurringUser(boolean isRecurringUser) {
+		this.isRecurringUser = isRecurringUser;
+	}
 
-    public Date getInTime() {
-        return inTime;
-    }
+	public double getPrice() {
+		return price;
+	}
 
-    public void setInTime(Date inTime) {
-        this.inTime = inTime;
-    }
+	public void setPrice(double price) {
+		this.price = price;
+	}
 
-    public Date getOutTime() {
-        return outTime;
-    }
+	public Date getInTime() {
+		return inTime;
+	}
 
-    public void setOutTime(Date outTime) {
-        this.outTime = outTime;
-    }
+	public void setInTime(Date inTime) {
+		this.inTime = inTime;
+	}
+
+	public Date getOutTime() {
+		return outTime;
+	}
+
+	public void setOutTime(Date outTime) {
+		this.outTime = outTime;
+	}
 }
